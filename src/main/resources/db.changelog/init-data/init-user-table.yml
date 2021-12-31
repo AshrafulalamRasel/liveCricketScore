@@ -16,7 +16,7 @@ databaseChangeLog:
 
               - column:
                   name: username
-                  value: system@gmail.com
+                  value: systemAdmin@gmail.com
 
               - column:
                   name: password
