@@ -79,7 +79,7 @@ created with necessary data.We can Manage it by liquibase.
    ng serve
    ```
    
-## Admin Login
+## User Login
 1. Email:
    ```sh
    systemAdmin@gmail.com
