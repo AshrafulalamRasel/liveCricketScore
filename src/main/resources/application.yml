@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: WebX-backend-service-app
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/webXtechicaldb
+    username: root
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+  liquibase:
+    enabled: true
+    change-log: classpath:db.changelog/db.changelog-master.yml
+server:
+  port: 3301
+itvillage:
+  app:
+    jwtSecret: madthrone
+    jwtExpiration: 86400
+
+feign:
+  client:
+    minio: http://182.163.126.23:7001/

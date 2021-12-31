@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-user-table
+      author: itvillage
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: id
+                  value: 123456789
+
+              - column:
+                  name: name
+                  value: admin
+
+              - column:
+                  name: username
+                  value: system@gmail.com
+
+              - column:
+                  name: password
+                  value: $2a$10$CylQe4pM35OgtUmtDPRHV.GGGMu4tFfNbfU9gh9Wts5q1hKuCn7py

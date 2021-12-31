@@ -1,0 +1,14 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-user-roles-table
+      author: itvillage
+      changes:
+        - insert:
+            tableName: user_roles
+            columns:
+              - column:
+                  name: user_id
+                  value: 123456789
+              - column:
+                  name: role_id
+                  value: 1
