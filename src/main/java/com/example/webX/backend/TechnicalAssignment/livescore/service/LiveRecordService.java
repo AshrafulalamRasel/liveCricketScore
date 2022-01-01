@@ -9,7 +9,7 @@ import java.net.URISyntaxException;
 
 public interface LiveRecordService {
 
-    ResponseEntity<String> getData() throws URISyntaxException;
+    ResponseEntity<String> getBasedXmlDataSet() throws URISyntaxException;
 
     ResponseEntity<LiveScoreEntity> createLiveScore(ScoreRequest scoreRequest);
 

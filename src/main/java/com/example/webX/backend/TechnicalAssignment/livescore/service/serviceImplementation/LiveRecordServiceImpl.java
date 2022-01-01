@@ -30,7 +30,7 @@ public class LiveRecordServiceImpl implements LiveRecordService {
 
 
     @Override
-    public ResponseEntity<String> getData() throws URISyntaxException {
+    public ResponseEntity<String> getBasedXmlDataSet() throws URISyntaxException {
         RestTemplate restTemplate = new RestTemplate();
         final String baseUrl = "http://static.cricinfo.com/rss/livescores.xml";
         URI uri = new URI(baseUrl);

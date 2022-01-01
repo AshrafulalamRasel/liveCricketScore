@@ -18,8 +18,8 @@ public class SchedulerJobComponent {
     private final LiveRecordServiceImpl liveRecordService;
 
     @Scheduled(cron="*/5 * * * * ?",zone = "GMT+6:00")
-    public void printMessage() throws IOException, URISyntaxException {
-        liveRecordService.getData();
+    public void pullLiveCricketScoreData() throws IOException, URISyntaxException {
+        liveRecordService.getBasedXmlDataSet();
         LOG.info("Live Score Record Pushing");
         System.out.println("Scheduler is calling Successfully!!");
     }
