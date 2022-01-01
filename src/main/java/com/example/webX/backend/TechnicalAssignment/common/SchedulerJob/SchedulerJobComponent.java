@@ -17,10 +17,10 @@ public class SchedulerJobComponent {
     private static final Logger LOG = LoggerFactory.getLogger(SchedulerJobComponent.class);
     private final LiveRecordServiceImpl liveRecordService;
 
-    @Scheduled(cron="*/5 * * * * ?",zone = "GMT+6:00")
+    @Scheduled(cron="0 0/5 * * * ?",zone = "GMT+6:00")
     public void pullLiveCricketScoreData() throws IOException, URISyntaxException {
         liveRecordService.getBasedXmlDataSet();
         LOG.info("Live Score Record Pushing");
-        System.out.println("Scheduler is calling Successfully!!");
+        System.out.println("Scheduler is calling Successfully after 5 minutes!!");
     }
 }
