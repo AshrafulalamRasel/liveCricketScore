@@ -98,5 +98,6 @@ created with necessary data.We can Manage it by liquibase.
 ##Simple Interface
 
 
+![Capture3](https://user-images.githubusercontent.com/29334642/147853568-02506973-3a90-49a0-8e6d-18759790ddce.PNG)
 
 
