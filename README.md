@@ -101,7 +101,7 @@ created with necessary data.We can Manage it by liquibase.
 
 ![Capture3](https://user-images.githubusercontent.com/29334642/147853568-02506973-3a90-49a0-8e6d-18759790ddce.PNG)
 
-2.User Show Live Score:
+2.User Can Show Live Score:
 
 ![Capture](https://user-images.githubusercontent.com/29334642/147853611-c7277afa-bafa-43f4-86e4-edef7a0d5b5e.PNG)
 
