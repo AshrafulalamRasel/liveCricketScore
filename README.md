@@ -21,7 +21,7 @@ In this [Assignment](https://github.com/AshrafulalamRasel/liveCricketScore/)
 ### Build With
 
 #### Frontend:
-* [Angular 11](https://github.com/AshrafulalamRasel/liveCricketScore/)
+* [Angular 11](https://github.com/AshrafulalamRasel/WebXFrontEndLiveCricket/)
 #### Backend:
 * [Springboot Framework](https://github.com/AshrafulalamRasel/liveCricketScore/)
 #### Database:
@@ -46,7 +46,7 @@ created with necessary data.We can Manage it by liquibase.
 
 1. Just Clone frontend the repo
    ```sh
-   git clone https://github.com/AshrafulalamRasel/liveCricketScore/
+   git clone https://github.com/AshrafulalamRasel/WebXFrontEndLiveCricket/
    ```
 1. Just Clone Backend the repo
    ```sh
