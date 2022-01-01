@@ -105,7 +105,7 @@ created with necessary data.We can Manage it by liquibase.
 
 ![Capture](https://user-images.githubusercontent.com/29334642/147853611-c7277afa-bafa-43f4-86e4-edef7a0d5b5e.PNG)
 
-3.User Can Search Any word:
+3.User Can Search Any Relevant word:
 
 ![Capture1](https://user-images.githubusercontent.com/29334642/147853624-88fec9bc-78ef-4363-9b3a-ae2bf861af22.PNG)
 
