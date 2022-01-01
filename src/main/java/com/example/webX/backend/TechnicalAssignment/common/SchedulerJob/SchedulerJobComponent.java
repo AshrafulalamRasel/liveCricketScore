@@ -21,6 +21,6 @@ public class SchedulerJobComponent {
     public void pullLiveCricketScoreData() throws IOException, URISyntaxException {
         liveRecordService.getBasedXmlDataSet();
         LOG.info("Live Score Record Pushing");
-        System.out.println("Scheduler is calling Successfully after 5 minutes!!");
+        System.out.println("Scheduler is calling Successfully after every 5 minutes!!");
     }
 }
