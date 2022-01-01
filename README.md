@@ -92,6 +92,6 @@ created with necessary data.We can Manage it by liquibase.
 ## Usage
 
 * [Frontend url](http://localhost:4200/)
-* [Backend Rest API (swagger-ui)](http://localhost:33001/swagger-ui.html)
+* [Backend Rest API (swagger-ui)](http://localhost:3301/swagger-ui.html)
 
 

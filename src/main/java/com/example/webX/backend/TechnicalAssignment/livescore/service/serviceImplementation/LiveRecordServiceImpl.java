@@ -1,6 +1,7 @@
 package com.example.webX.backend.TechnicalAssignment.livescore.service.serviceImplementation;
 
 import com.example.webX.backend.TechnicalAssignment.common.Utils.DataBindConverter;
+import com.example.webX.backend.TechnicalAssignment.livescore.constants.RootApi;
 import com.example.webX.backend.TechnicalAssignment.livescore.model.domain.LiveScoreEntity;
 import com.example.webX.backend.TechnicalAssignment.livescore.model.repository.LiveScoreRepository;
 import com.example.webX.backend.TechnicalAssignment.livescore.service.LiveRecordService;
@@ -27,12 +28,13 @@ public class LiveRecordServiceImpl implements LiveRecordService {
 
     private final DataBindConverter dataBindConverter;
     private final LiveScoreRepository liveScoreRepository;
+    private final String baseUrl = RootApi.LIVE_SCORE_API;
 
 
     @Override
     public ResponseEntity<String> getBasedXmlDataSet() throws URISyntaxException {
         RestTemplate restTemplate = new RestTemplate();
-        final String baseUrl = "http://static.cricinfo.com/rss/livescores.xml";
+
         URI uri = new URI(baseUrl);
 
         ResponseEntity<String> result = restTemplate.getForEntity(uri, String.class);

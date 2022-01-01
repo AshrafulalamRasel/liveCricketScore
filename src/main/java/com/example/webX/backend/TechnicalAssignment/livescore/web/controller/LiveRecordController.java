@@ -24,7 +24,7 @@ public class LiveRecordController {
         return new ResponseEntity(liveRecordService.getAllLiveScoreListBy(pageNo), HttpStatus.OK);
     }
 
-    @GetMapping("/searchAll")
+    @GetMapping("/live-score/searchAll")
     public ResponseEntity<ScoreResponsePagination> getAllLiveListBySearching(@RequestParam(value = "pageNo", required = true) int pageNo,
                                                                              @RequestParam(value = "liveScorePublishDate", required = false) String liveScorePublishDate,
                                                                              @RequestParam(value = "liveScoreTitle", required = false) String liveScoreTitle,

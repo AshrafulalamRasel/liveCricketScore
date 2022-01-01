@@ -16,7 +16,7 @@ public interface LiveRecordService {
     ScoreResponsePagination getAllLiveScoreListBy(int pageNo);
 
     ScoreResponsePagination getAllLiveScoreSearchingBy(int pageNo,
-                                                       String liveScorePublishDate,
+                                                       String body,
                                                        String liveScoreTitle,
                                                        String liveScoreLink,
                                                        String liveScoreDescription);
