@@ -1,5 +1,7 @@
 package com.example.webX.backend.TechnicalAssignment.livescore.web.controller;
 
+import com.example.webX.backend.TechnicalAssignment.common.constants.AccessApiConstant;
+import com.example.webX.backend.TechnicalAssignment.livescore.constants.LiveCricketScore;
 import com.example.webX.backend.TechnicalAssignment.livescore.service.LiveRecordService;
 import com.example.webX.backend.TechnicalAssignment.livescore.web.dto.response.ScoreResponsePagination;
 import lombok.AllArgsConstructor;
@@ -10,13 +12,14 @@ import org.springframework.web.bind.annotation.*;
 
 @Slf4j
 @AllArgsConstructor
+@CrossOrigin(origins = "*")
 @RestController
-@RequestMapping("/live-score")
+@RequestMapping(LiveCricketScore.PUBLIC)
 public class LiveRecordController {
 
     private final LiveRecordService liveRecordService;
 
-    @GetMapping("/fetchAll/{pageNo}")
+@GetMapping("/live-score/fetchAll/{pageNo}")
     public ResponseEntity<ScoreResponsePagination> getAllLiveList(@PathVariable int pageNo) {
         return new ResponseEntity(liveRecordService.getAllLiveScoreListBy(pageNo), HttpStatus.OK);
     }
